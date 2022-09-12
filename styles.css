@@ -1,0 +1,330 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    background-color: #454647;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 10px 100px;
+    position: sticky;
+    top: 0;
+}
+
+header h3 {
+    color:white
+}
+
+#logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo span {
+    margin-right: 20px;
+    color:rgba(223, 183, 3, 0.952)
+}
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav li {
+    color: white;
+    margin-left: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #949393
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+#intro {
+    background-image: url("./img/festival.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: blanchedalmond;
+    height: 450px;
+    margin-bottom: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#intro h1 {
+    color:white
+}
+
+#intro p {
+    color:white;
+    width: 40%;
+    text-align: right;
+}
+
+#intro b {
+    color:darkcyan;
+}
+
+#intro div {
+    margin: 20px;
+}
+
+#button1 {
+    background-color: transparent;
+    color:white;
+    height: 30px;
+    border-radius: 8%;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px
+}
+
+#button1:hover {
+    background-color: white;
+    color:purple;
+    border-radius: 8%;
+    border-color: purple;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#button2 {
+    background-color: purple;
+    color:white;
+    height: 30px;
+    border-radius: 8%;
+    border-color: purple;
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px
+}
+
+#button2:hover {
+    background-color: rgba(85, 5, 85, 0.719);
+    color:white;
+    border-radius: 8%;
+    border-color: rgba(85, 5, 85, 0.719);
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top h3 {
+    margin: 8px;
+}
+
+#top h1 {
+    margin: 0;
+    letter-spacing: 4px;
+    color: purple;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.musico {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 25%;
+    height: 20%;
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3%;
+}
+
+.musico img {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+.music_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.music_style p:first-child {
+    color:black;
+    background-color: rgb(255, 238, 1);
+    border-radius: 10%;
+    margin: 8px 8px 0 8px;
+    padding: 2px;
+    height: 50%;
+}
+
+.music_style p:last-child {
+    color:black;
+    background-color: rgb(11, 165, 165);
+    border-radius: 10%;
+    margin: 8px 8px 0 8px;
+    padding: 2px;
+    height: 50%;
+}
+
+.musico h4 {
+    margin: 5px 10px 10px 10px;
+}
+
+.musico p {
+    margin: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+#lugar_fecha {
+    display: flex;
+    flex-direction: row;
+    background-color: #5e5e5e;
+    margin-top: 30px;
+}
+
+#lugar_fecha img {
+    width: 50%;
+}
+
+#lugar_fecha div {
+    width: 50%;
+}
+
+#lugar_fecha p, #lugar_fecha h1 {
+    color: white;
+    padding: 2px 15px;
+}
+
+#lugar_fecha button {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8%;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+#lugar_fecha button:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8%;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+#participa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+#participa h3 {
+    margin: 30px 8px 8px 8px;
+}
+
+#participa h1 {
+    margin: 0;
+    letter-spacing: 4px;
+    color: purple;
+}
+
+#participa span {
+    font-style: italic;
+}
+
+#participa div form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#participa div input {
+    width: 300px;
+    margin: 10px 5px;
+}
+
+#participa textarea {
+    width: 610px;
+    height: 300px
+}
+
+#recordatorio {
+    padding: 5px;
+    background-color: rgb(255, 255, 167);
+    color:rgba(223, 183, 3, 0.952);
+    border-color:rgba(223, 183, 3, 0.952);
+    border-width: 1px;
+    border-style: solid;
+}
+
+#participa button{
+    margin: 10px;
+    padding: 5px;
+    width: 610px;
+    background-color: rgb(92, 179, 92);
+    color:white;
+    border: 0px;
+}
+
+#participa button:hover{
+    background-color: rgb(46, 133, 46);
+    color:white;
+}
+/* ------------------------------------------------------------------------------------------------------ */
+footer {
+    background-color: #454647;
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 25px
+}
+
+footer a {
+    color: #949393;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
