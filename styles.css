@@ -4,10 +4,7 @@ body {
 
 header {
     background-color: #454647;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    padding: 10px 100px;
+    padding: 20px 100px;
     position: sticky;
     top: 0;
 }
@@ -18,12 +15,11 @@ header h3 {
 
 #logo {
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 #logo span {
-    margin-right: 20px;
     color:rgba(223, 183, 3, 0.952)
 }
 
@@ -127,16 +123,19 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #top h3 {
     margin: 8px;
+    text-align: center;
 }
 
 #top h1 {
-    margin: 0;
+    margin: 0 0 20px 0;
     letter-spacing: 4px;
     color: purple;
+    text-align: center;
 }
 
 #cards {
@@ -148,20 +147,15 @@ nav a:hover {
 .musico {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    width: 25%;
     height: 20%;
     border-color: grey;
     border-style: solid;
     border-width: 1px;
-    border-radius: 3%;
 }
 
 .musico img {
     width: 100%;
     height: 250px;
-    border-top-left-radius: 3%;
-    border-top-right-radius: 3%;
 }
 
 .music_style {
@@ -202,14 +196,11 @@ nav a:hover {
     flex-direction: row;
     background-color: #5e5e5e;
     margin-top: 30px;
+    padding: 0;
 }
 
-#lugar_fecha img {
-    width: 50%;
-}
-
-#lugar_fecha div {
-    width: 50%;
+#info_logistica {
+    padding: 10px;
 }
 
 #lugar_fecha p, #lugar_fecha h1 {
@@ -217,34 +208,15 @@ nav a:hover {
     padding: 2px 15px;
 }
 
-#lugar_fecha button {
-    color: white;
-    background-color: transparent;
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 8%;
-    margin-left: 15px;
-    padding: 5px;
-}
-
-#lugar_fecha button:hover {
-    color: black;
-    background-color: white;
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 8%;
-    margin-left: 15px;
-    padding: 5px;
-}
-
 /* ------------------------------------------------------------------------------------------------------ */
 #participa {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     align-items: center;
     margin-bottom: 150px;
+}
+
+#participa .row {
+    justify-content: center;
 }
 
 #participa h3 {
@@ -261,20 +233,13 @@ nav a:hover {
     font-style: italic;
 }
 
-#participa div form{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#participa input {
+    margin: 20px 0;
 }
 
-#participa div input {
-    width: 300px;
-    margin: 10px 5px;
-}
-
-#participa textarea {
-    width: 610px;
-    height: 300px
+textarea {
+    height: 200px;
+    margin: 0 0 20px 0;
 }
 
 #recordatorio {
@@ -287,9 +252,7 @@ nav a:hover {
 }
 
 #participa button{
-    margin: 10px;
     padding: 5px;
-    width: 610px;
     background-color: rgb(92, 179, 92);
     color:white;
     border: 0px;
@@ -310,14 +273,12 @@ footer {
 }
 
 footer ul {
-    display:flex;
-    flex-direction: row;
     justify-content: center;
 }
 
 footer li {
+    text-align: center;
     list-style: none;
-    margin-left: 25px
 }
 
 footer a {
