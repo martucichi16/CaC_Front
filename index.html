@@ -11,36 +11,60 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
 
         <!-- Mis estilos -->
         <link rel="stylesheet" href="./styles.css">
     </head>
 
     <body>
-        <header class="container-fluid">
-            <div class="row">
-                <div id="logo" class="col-lg-6">
-                    <span class="material-symbols-outlined">rocket</span>
-                    <h3>Grow</h3>
-                </div>
+        <header >
+            <div id ="lg_nav" class="container-fluid"> <!-- Nav de compu -->
+                <div class="row">
+                    <div id="logo" class="col-lg-6">
+                        <span class="material-symbols-outlined">rocket</span>
+                        <h3>Grow</h3>
+                    </div>
 
-                <div class="col-lg-6">
-                    <nav>
-                        <ul>
-                            <li><a href="">El Festival</a></li>
-                            <li><a href="">Músicos Estrella</a></li>
-                            <li><a href="">Lugar y Fecha</a></li>
-                            <li><a href="">Toca en el festival</a></li>
-                            <li><a href="">Comprar tickets</a></li>
-                        </ul>
-                    </nav>
+                    <div class="col-lg-6">
+                        <nav>
+                            <ul>
+                                <li class="col-lg-2"><a href="">El Festival</a></li>
+                                <li class="col-lg-3"><a href="">Músicos Estrella</a></li>
+                                <li class="col-lg-3"><a href="">Lugar y Fecha</a></li>
+                                <li class="col-lg-3"><a href="">Toca en el festival</a></li>
+                                <li class="col-lg-3"><a href="">Comprar tickets</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
+
+            <nav id="mobile_nav" class="navbar fixed-top navbar-expand-lg navbar-dark"> <!-- Nav mobile -->
+                <div class="container">
+                    <div id="logo" class="col-lg-6">
+                        <span class="material-symbols-outlined">rocket</span>
+                        <h3>Grow</h3>
+                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse flex-row-reverse collapse show" id="navbarNav" style="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">El Festival</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Musicos Estrella</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Lugar y La Fecha</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Toca en el Festival</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Comprar Tickets</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
         </header>
 
-        <section class ="container-fluid" id="intro">
+        <section id="intro">
             <h1>Grow</h1>
             <p>
                 Grow llega por primera vez a Argentina!! Un festival para compartir con amigos y crear recuerdos
@@ -48,67 +72,54 @@
                 creando un espacio para descubrir talento y enamorarse de nuevas canciones. <br><b>Te esperamos!</b>
             </p>
 
-            <div>
+            <div id="buttons">
                 <button id="button1">Quiero participar</button>
                 <button id="button2">Comprar Ticket</button>
             </div>
         </section>
 
         <section class="container" id="top">
-            <h3 class="col-6">CONOCE A NUESTROS</h3>
-            <h1 class="col-6">MÚSICOS ESTRELLA</h1>
+            <h3 class="col-12 col-lg-12">CONOCE A NUESTROS</h3>
+            <h1 class="col-12 col-lg-12">MÚSICOS ESTRELLA</h1>
 
             <div class="row" id="cards">
-                <div class="col-12 col-lg-4 musico">
-                    <img src="./img/salvapantallas.jpg" alt="Foto Salvapantallas">
-
+                <div class="card col-7 col-lg-4 musico">
+                    <img src="./img/salvapantallas.jpg" alt="Foto Salvapantallas" class="card-img-top">
                     <div class="music_style">
-                        <p><b>Rock</b></p>
-                        <p><b>Pop</b></p>
+                        <p id="rock"><b>Rock</b></p>
+                        <p id="pop"><b>Pop</b></p>
                     </div>
-
-                    <h4>Salvapantallas</h4>
-
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit incidunt minima blanditiis, 
-                        pariatur aspernatur itaque. Veritatis, vel illo dolorem natus autem odio odit est neque quisquam 
-                        pariatur suscipit nulla necessitatibus?
-                    </p>
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minus 
+                        exercitationem quidem praesentium illo sed vero similique nemo numquam molestias recusandae 
+                        reiciendis hic repellendus esse natus eos nulla, iusto ab?</p>
+                    </div>
                 </div>
 
-                <div class="col-12 col-lg-4 musico">
-                    <img src="./img/cieloazul.jpg" alt="Foto Cieloazul">
-
+                <div class="card col-7 col-lg-4 musico">
+                    <img src="./img/cieloazul.jpg" alt="Foto Cieloazul" class="card-img-top">
                     <div class="music_style">
-                        <p><b>Urbano</b></p>
-                        <p><b>Latino</b></p>
+                        <p id="urbano"><b>Urbano</b></p>
+                        <p id="latino"><b>Latino</b></p>
                     </div>
-
-                    <h4>Cieloazul</h4>
-
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit incidunt minima blanditiis, 
-                        pariatur aspernatur itaque. Veritatis, vel illo dolorem natus autem odio odit est neque quisquam 
-                        pariatur suscipit nulla necessitatibus?
-                    </p>
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minus 
+                        exercitationem quidem praesentium illo sed vero similique nemo numquam molestias recusandae 
+                        reiciendis hic repellendus esse natus eos nulla, iusto ab?</p>
+                    </div>
                 </div>
 
-
-                <div class="col-12 col-lg-4 musico">
-                    <img src="./img/koino_yokan.jfif" alt="Foto Koino Yokan">
-
+                <div class="card col-7 col-lg-4 musico">
+                    <img src="./img/koino_yokan.jfif" alt="Foto Koino Yokan" class="card-img-top">
                     <div class="music_style">
-                        <p><b>Indie pop</b></p>
-                        <p><b>Acustico</b></p>
+                        <p id="pop"><b>Pop</b></p>
+                        <p id="acustico"><b>Acustico</b></p>
                     </div>
-
-                    <h4>Koino Yokan</h4>
-
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit incidunt minima blanditiis, 
-                        pariatur aspernatur itaque. Veritatis, vel illo dolorem natus autem odio odit est neque quisquam 
-                        pariatur suscipit nulla necessitatibus?
-                    </p>
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minus 
+                        exercitationem quidem praesentium illo sed vero similique nemo numquam molestias recusandae 
+                        reiciendis hic repellendus esse natus eos nulla, iusto ab?</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -137,52 +148,45 @@
 
         <section id="participa" class="container">
             <div class="row">
-                <h3 class="col-lg-12">PARTICIPA COMO</h3>
-                <h1 class="col-lg-12">MÚSICO DEL FESTIVAL</h1>
+                <h3 class="col-12 col-lg-12">PARTICIPA COMO</h3>
+                <h1 class="col-12 col-lg-12">MÚSICO DEL FESTIVAL</h1>
 
-                <p class="col-lg-12">Anotate como músico para conseguir un <span>gig</span> en el festival!</p>
+                <p class="col-12 col-lg-12">Anotate como músico para conseguir un <span>gig</span> en el festival!</p>
 
                 <div>
-                    <form>
-                        <input type="text" name="nombre" placeholder="Nombre" class="col-lg-5">
-                        <input type="text" name="apellido" placeholder="Apellido" class="col-lg-5">
+                    <form id="nombre_apellido">
+                        <input type="text" name="nombre" placeholder="Nombre" class="col-5 col-lg-5">
+                        <input type="text" name="apellido" placeholder="Apellido" class="col-5 col-lg-5">
                     </form>
                 </div>
 
                 <form>
-                    <textarea name= “info” rows= “20” cols= “100” class="col-lg-10"
+                    <textarea name= “info” rows= “20” cols= “100” class="col-12 col-lg-10"
                     placeholder="Describí brevemente tu estilo musical o el de tu banda"></textarea>
                 </form>
 
-                <p class=col-lg-10 id="recordatorio">Recordá incluir tu información de contacto para poder comunicarnos con vos </p>
+                <p class="col-12 col-lg-12" id="recordatorio">Recordá incluir tu información de contacto para poder 
+                    comunicarnos  con vos </p>
 
-                <button class="col-lg-10">Enviar</button>
+                <button class="col-12 col-lg-10">Enviar</button>
             </div>
-            <!-- <form>
-                <div>
-                    <input type="text" name="nombre" placeholer="Nombre">
-                    <input type="text" name="apellido" placeholer="Apellido">
-                </div>
-
-                <textarea name= “info” rows= “20” cols= “100” 
-                placeholder="Describí brevemente tu estilo musical o el de tu banda"></textarea>
-    
-                <p>Recordá incluir tu información de contacto para poder comunicarnos con vos </p>
-    
-                <input type= “submit” value= “Enviar”>
-            </form> -->
         </section>
 
         <footer class="container-fluid">
             <ul class="row">
-                <li class="col-lg-2"><a href="">Preguntas Frecuentes</a></li>
-                <li class="col-lg-1"><a href="">Contactanos</a></li>
-                <li class="col-lg-1"><a href="">Prensa</a></li>
-                <li class="col-lg-1"><a href="">Festivales</a></li>
-                <li class="col-lg-1"><a href="">Músicos</a></li>
-                <li class="col-lg-2"><a href="">Terminos y Condiciones</a></li>
-                <li class="col-lg-1"><a href="">Privacidad</a></li>
+                <li class="col-12 col-lg-2"><a href="">Preguntas Frecuentes</a></li>
+                <li class="col-12 col-lg-1"><a href="">Contactanos</a></li>
+                <li class="col-12 col-lg-1"><a href="">Prensa</a></li>
+                <li class="col-12 col-lg-1"><a href="">Festivales</a></li>
+                <li class="col-12 col-lg-1"><a href="">Músicos</a></li>
+                <li class="col-12 col-lg-2"><a href="">Terminos y Condiciones</a></li>
+                <li class="col-12 col-lg-1"><a href="">Privacidad</a></li>
             </ul>
         </footer>
+
+        <!-- JS Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
+        crossorigin="anonymous"></script>
     </body>
 </html>
